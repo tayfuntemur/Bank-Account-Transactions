@@ -15,26 +15,26 @@ Banka_uygulamasi/
 │
 - ├── app.py                     #Ana giriş noktası (Streamlit UI)
 - ├── config.py                  #Yapılandırma ayarları (örneğin, veritabanı adı, log ayarları)
-├── requirements.txt           #Gerekli kütüphaneler
-│
-├── services/                  #İş mantığı katmanı
-│   ├── user_service.py        #Kullanıcı işlemleri
-│   ├── transaction_service.py #İşlem işlemleri
-│
-├── repositories/              #Veri erişim katmanı
-│   ├── user_repository.py     #Kullanıcı veritabanı işlemleri
-│   ├── transaction_repository.py #İşlem veritabanı işlemleri
-│
-├── models/                    #Model katmanı
-│   ├── user_model.py          #Kullanıcı modeli
-│   ├── transaction_model.py   #İşlem modeli
-│
-├── utils/                     #Yardımcı fonksiyonlar
-│   ├── bcrypt_utils.py        #Şifreleme işlemleri
-│   ├── validation_utils.py    #Doğrulama işlemleri
-│
-└── logs/                      #Log dosyaları
-    └── users.log              #Kullanıcı logları
+- ├── requirements.txt           #Gerekli kütüphaneler
+- │
+- ├── services/                  #İş mantığı katmanı
+- │   ├── user_service.py        #Kullanıcı işlemleri
+- │   ├── transaction_service.py #İşlem işlemleri
+- │
+- ├── repositories/              #Veri erişim katmanı
+- │   ├── user_repository.py     #Kullanıcı veritabanı işlemleri
+- │   ├── transaction_repository.py #İşlem veritabanı işlemleri
+- │
+- ├── models/                    #Model katmanı
+- │   ├── user_model.py          #Kullanıcı modeli
+- │   ├── transaction_model.py   #İşlem modeli
+- │
+- ├── utils/                     #Yardımcı fonksiyonlar
+- │   ├── bcrypt_utils.py        #Şifreleme işlemleri
+- │   ├── validation_utils.py    #Doğrulama işlemleri
+- │
+- └── logs/                      #Log dosyaları
+-    └── users.log              #Kullanıcı logları
 
 ## Teknolojiler:
 -Streamlit: Web arayüzü için kullanılmıştır.
