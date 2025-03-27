@@ -13,8 +13,8 @@ Kullanıcılar, para yatırma, çekme, harcama yapma işlemlerini gerçekleştir
 ### Katmanlı (layered) Mimari
 Banka_uygulamasi/
 │
-├── app.py                     #Ana giriş noktası (Streamlit UI)
-├── config.py                  #Yapılandırma ayarları (örneğin, veritabanı adı, log ayarları)
+- ├── app.py                     #Ana giriş noktası (Streamlit UI)
+- ├── config.py                  #Yapılandırma ayarları (örneğin, veritabanı adı, log ayarları)
 ├── requirements.txt           #Gerekli kütüphaneler
 │
 ├── services/                  #İş mantığı katmanı
