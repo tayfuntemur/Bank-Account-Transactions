@@ -1,4 +1,4 @@
-![](https://icons8.com/icon/43128/bank)![] # Bank-Account-Transactions
+# Bank-Account-Transactions
 Banka Uygulaması, kullanıcıların hesap bilgilerini yönetebileceği, işlem yapabileceği ve harcama analizleri yapabileceği bir platformdur. 
 Kullanıcılar, para yatırma, çekme, harcama yapma işlemlerini gerçekleştirebilir ve bu işlemler üzerinden finansal analizler alabilirler.
 
