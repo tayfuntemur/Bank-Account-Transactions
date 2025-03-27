@@ -1,16 +1,17 @@
-# Bank-Account-Transactions
-Banka Uygulaması, kullanıcıların hesap bilgilerini yönetebileceği, işlem yapabileceği ve harcama analizleri yapabileceği bir platformdur. Kullanıcılar, para yatırma, çekme, harcama yapma işlemlerini gerçekleştirebilir ve bu işlemler üzerinden finansal analizler alabilirler.
-Özellikler
+[![](https://icons8.com/icon/43128/bank)]#Bank-Account-Transactions
+Banka Uygulaması, kullanıcıların hesap bilgilerini yönetebileceği, işlem yapabileceği ve harcama analizleri yapabileceği bir platformdur. 
+Kullanıcılar, para yatırma, çekme, harcama yapma işlemlerini gerçekleştirebilir ve bu işlemler üzerinden finansal analizler alabilirler.
 
-Kullanıcı Girişi ve Kayıt: Kullanıcılar, kendi hesaplarını oluşturup giriş yapabilirler.
-Para İşlemleri: Kullanıcılar, hesaplarına para yükleyebilir, para çekebilir ve harcama yapabilirler.
-İşlem Geçmişi: Kullanıcılar, geçmiş işlemlerini görüntüleyebilirler.
-Kategori Özeti: Kullanıcıların yaptığı işlemlerin kategori bazında özeti alınabilir.
-Harcama Analizi: Belirli bir tarih aralığında yapılan harcamalar analiz edilebilir.
+##Özellikler:
+-Kullanıcı Girişi ve Kayıt: Kullanıcılar, kendi hesaplarını oluşturup giriş yapabilirler.
+-Para İşlemleri: Kullanıcılar, hesaplarına para yükleyebilir, para çekebilir ve harcama yapabilirler.
+-İşlem Geçmişi: Kullanıcılar, geçmiş işlemlerini görüntüleyebilirler.
+-Kategori Özeti: Kullanıcıların yaptığı işlemlerin kategori bazında özeti alınabilir.
+-Harcama Analizi: Belirli bir tarih aralığında yapılan harcamalar analiz edilebilir.
 
-Mimari
-Katmanlı (layered) Mimari
-banka_uygulamasi/
+##Mimari
+###Katmanlı (layered) Mimari
+Banka_uygulamasi/
 │
 ├── app.py                     # Ana giriş noktası (Streamlit UI)
 ├── config.py                  # Yapılandırma ayarları (örneğin, veritabanı adı, log ayarları)
@@ -35,50 +36,50 @@ banka_uygulamasi/
 └── logs/                      # Log dosyaları
     └── users.log              # Kullanıcı logları
 
-Teknolojiler
+##Teknolojiler:
+-Streamlit: Web arayüzü için kullanılmıştır.
+-SQLite: Veritabanı olarak kullanılmıştır.
+-Python: Uygulamanın temel programlama dili.
+-Logging: Uygulama içi işlem ve hata takibi için kullanılmıştır.
 
-Streamlit: Web arayüzü için kullanılmıştır.
-SQLite: Veritabanı olarak kullanılmıştır.
-Python: Uygulamanın temel programlama dili.
-Logging: Uygulama içi işlem ve hata takibi için kullanılmıştır.
-
-Başlangıç
+##Başlangıç:
 Gereksinimler
-
 Python 3.7+
 Streamlit
 SQLite (Veritabanı)
 
-Kurulum
-
-Gerekli Kütüphanelerin Yüklenmesi:
+##Kurulum:
+###Gerekli Kütüphanelerin Yüklenmesi:
 Aşağıdaki komutla gerekli Python paketlerini yükleyin:
 bashCopypip install -r requirements.txt
 
-Veritabanı Kurulumu:
-Uygulama ilk başlatıldığında gerekli veritabanı tabloları otomatik olarak oluşturulacaktır. Bunun için repositories dizininde bulunan user_repository.py ve transaction_repository.py dosyalarını çalıştırabilirsiniz.
+##Veritabanı Kurulumu:
+Uygulama ilk başlatıldığında gerekli veritabanı tabloları otomatik olarak oluşturulacaktır. 
+Bunun için repositories dizininde bulunan user_repository.py ve transaction_repository.py dosyalarını çalıştırabilirsiniz.
 
-Uygulamanın Başlatılması
+##Veritabanı Kurulumu:
+###Uygulamanın Başlatılması
 Uygulamanızı başlatmak için aşağıdaki komutu çalıştırabilirsiniz:
 bashCopystreamlit run app.py
 Bu komut, uygulamanızı yerel bir sunucuda başlatacak ve tarayıcınızda açacaktır.
-Kullanım
-Kullanıcı Girişi ve Kayıt
+
+##Kullanım
+###Kullanıcı Girişi ve Kayıt
 Uygulamaya giriş yapabilir ya da yeni bir kullanıcı kaydı oluşturabilirsiniz.
-İşlem Yapma
+###İşlem Yapma
 Kullanıcılar, hesaplarına para yükleyebilir, para çekebilir veya harcama yapabilirler.
-İşlem Geçmişi ve Analiz
+###İşlem Geçmişi ve Analiz
 Kullanıcılar geçmiş işlemlerini görüntüleyebilir ve belirli tarih aralıklarında yapılan harcamalarla ilgili analizler alabilirler.
-Kategori Özeti
+###Kategori Özeti
 Yaptığınız işlemler kategorilere ayrılarak toplam harcama ve gelir kategorileri sunulur.
-Harcama Analizi
+###Harcama Analizi
 Belirli bir tarih aralığında yapılan harcamaların analizi yapılır ve en fazla harcama yapılan kategoriyi gösterir.
-Katkı
+###Katkı
 Eğer bu projeye katkıda bulunmak isterseniz, aşağıdaki adımları takip edebilirsiniz:
 
-Projeyi forklayın.
+##Projeyi forklayın.
 Yapmak istediğiniz değişiklikleri gerçekleştirin.
 Değişikliklerinizi bir pull request olarak gönderin.
 
-Lisans
+##Lisans
 Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için LICENSE dosyasına bakabilirsiniz.
