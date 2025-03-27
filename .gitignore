@@ -1,0 +1,24 @@
+ # Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Veritabanı dosyaları
+*.db
+*.sqlite3
+
+# Log dosyaları - boş dosya hariç
+logs/*.log
+!logs/users.log
+
+# Sanal ortam klasörleri
+venv/
+env/
+.env/
+
+# IDE klasörleri
+.vscode/
+.idea/
+
+# Diğer gereksiz dosyalar
+.DS_Store
