@@ -34,14 +34,16 @@ def get_next_transaction_id():     # her yapılan işlemde sıralı işlem numar
     return 1 if max_id is None else max_id + 1
 
 def add_transaction(transaction: dict):
-    # İşlemi eklemeden önce bakiyenin yeterli olup olmadığını kontrol eder.
     account_id = transaction["account_id"]
     current_balance = get_balance(account_id)
-    
-    
-    if abs(transaction["amount"]) > current_balance:
-        
-        raise ValueError(f"Insufficient balance. Current balance: {current_balance}, Transaction amount: {abs(transaction['amount'])}")
+
+    # Yalnızca para çekme veya harcama işlemlerinde bakiye kontrolü yapılmalı
+    if transaction["transactions_type"] in ["para_cek", "harcama"]:
+        if transaction["amount"] > current_balance:
+            raise ValueError(f"Insufficient balance. Current balance: {current_balance}, Transaction amount: {transaction['amount']}")
+
+    # İşlem ekleme devamı...
+
     
     
     conn = get_connection()
